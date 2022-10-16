@@ -17,11 +17,11 @@ body:
       placeholder: ex. google.com
     validations:
       required: true
-      
+
   - type: dropdown
     id: browsers
     attributes:
-      label: What browser are u using?      
+      label: What browser are u using?
       multiple: true
       options:
         - Firefox
@@ -30,16 +30,16 @@ body:
         - Other
     validations:
       required: true
-      
+
   - type: textarea
     id: notes
     attributes:
       label: Notes
-      description: Are things like videoplayback not working etc. 
+      description: Are things like videoplayback not working etc.
       placeholder: a
     validations:
       required: false
-      
+
   - type: dropdown
     id: version
     attributes:
@@ -50,6 +50,5 @@ body:
         - 1.0.4
         - 1.0.4
         - Latest
- validations:
+    validations:
       required: true
-
