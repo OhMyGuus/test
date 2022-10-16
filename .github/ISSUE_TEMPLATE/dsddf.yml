@@ -29,7 +29,7 @@ body:
         - Microsoft Edge
         - Other
     validations:
-      required: false
+      required: true
       
   - type: textarea
     id: notes
@@ -46,8 +46,13 @@ body:
       label: Version
       description: What version of our software are you running?
       options:
-        - 1.0.2 (Default)
-        - 1.0.3 (Edge)
+        - 1.0.3
+        - 1.0.4
+        - 1.0.4
+        - Latest
+      value: Latest
+
+
     validations:
       required: true
 
