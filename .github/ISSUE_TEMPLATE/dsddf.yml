@@ -22,7 +22,8 @@ body:
     id: browsers
     attributes:
       label: What browser are u using?
-      required: true
+    validations:
+      required: false
       multiple: true
       options:
         - Firefox
