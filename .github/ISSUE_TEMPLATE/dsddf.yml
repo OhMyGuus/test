@@ -36,7 +36,7 @@ body:
     attributes:
       label: Notes
       description: Are things like videoplayback not working etc. 
-      placeholder: 
+      placeholder: a
     validations:
       required: false
       
@@ -50,8 +50,6 @@ body:
         - 1.0.4
         - 1.0.4
         - Latest
-
-
-    validations:
+ validations:
       required: true
 
