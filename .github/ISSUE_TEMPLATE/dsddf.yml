@@ -21,16 +21,16 @@ body:
   - type: dropdown
     id: browsers
     attributes:
-      label: What browser are u using?
-    validations:
-      required: false
+      label: What browser are u using?      
       multiple: true
       options:
         - Firefox
         - Chrome
         - Microsoft Edge
         - Other
-
+    validations:
+      required: false
+      
   - type: textarea
     id: notes
     attributes:
