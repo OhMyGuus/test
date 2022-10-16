@@ -1,6 +1,6 @@
-name: Bug Report
-description: File a bug report
-title: "[REQ]: "
+name: Website request
+description: Report a cookie warning on a website
+title: "[REQ]: example.com"
 labels: ["Website request"]
 assignees:
   - OhMyGuus
