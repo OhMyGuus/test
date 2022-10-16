@@ -30,16 +30,7 @@ body:
         - Other
     validations:
       required: true
-
-  - type: textarea
-    id: notes
-    attributes:
-      label: Notes
-      description: Are things like videoplayback not working etc.
-      placeholder:
-    validations:
-      required: false
-
+      
   - type: dropdown
     id: version
     attributes:
@@ -50,5 +41,17 @@ body:
         - 1.0.4
         - 1.0.5
         - Latest
+      value: Latest
     validations:
       required: true
+
+  - type: textarea
+    id: notes
+    attributes:
+      label: Notes
+      description: Are things like videoplayback not working etc.
+      placeholder:
+    validations:
+      required: false
+
+
