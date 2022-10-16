@@ -18,29 +18,21 @@ body:
     validations:
       required: true
 
-  - type: dropdown
+  - type: input
     id: browsers
     attributes:
       label: What browser are u using?
       multiple: true
-      options:
-        - Firefox
-        - Chrome
-        - Microsoft Edge
-        - Other
+      value: Firefox
     validations:
       required: true
       
-  - type: dropdown
+  - type: input
     id: version
     attributes:
       label: Version
       description: What version of our software are you running?
-      options:
-        - 1.0.3
-        - 1.0.4
-        - 1.0.5
-        - Latest
+      value: 1.0.5
     validations:
       required: true
 
