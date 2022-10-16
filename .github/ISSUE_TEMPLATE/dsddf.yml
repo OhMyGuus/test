@@ -36,7 +36,7 @@ body:
     attributes:
       label: Notes
       description: Are things like videoplayback not working etc.
-      placeholder: a
+      placeholder:
     validations:
       required: false
 
