@@ -1,0 +1,35 @@
+name: Release listed
+
+on:
+  push:
+    tags:
+      - 'v*.*.*'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+          
+      - name: Sleep for 15 minutes
+        run: sleep 30s
+        shell: bash
+        
+      - name: Download xpi
+        run: |
+         wget https://addons.mozilla.org/firefox/downloads/latest/istilldontcareaboutcookies/istilldontcareaboutcookies-latest.xpi --trust-server-names
+      
+      - uses: actions/upload-artifact@v3
+        with:
+          name: IDCAC-firefox-signed
+          path: istilldontcareaboutcookies-*.xpi
+
+      - name: "Create Release"
+        uses: softprops/action-gh-release@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          draft: true
+          files: |
+            istilldontcareaboutcookies-*.xpi
